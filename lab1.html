@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BMSIT&M Timetable</title>
+<!-- <style>
+  body {
+    font-family: "Times New Roman", serif;
+    margin: 20px;
+    text-align: center;
+  }
+
+  h1 { margin-bottom: 4px; }
+  h2, h3 { margin: 2px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  th, td {
+    border: 1px solid #000;
+    padding: 8px 5px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  th { background: #eee; }
+
+  .day {
+    background: #f2f2f2;
+    width: 100px;
+  }
+
+  .break {
+    background: #fff;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 15px;
+  }
+
+  .header {
+    margin-bottom: 10px;
+  }
+</style> -->
+</head>
+<style>
+	body{
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+</style>
+<body>
+<table border="1">
+  <tr>
+    <th>DAY</th>
+    <th>I<br>8.30-9.25</th>
+    <th>II<br>9.25-10.20</th>
+    <th>10.20-10.40</th>
+    <th>III<br>10.40-11.35</th>
+    <th>IV<br>11.35-12.30</th>
+    <th>12.30-1.25</th>
+    <th>V<br>1.25-2.20</th>
+    <th>VI<br>2.20-3.15</th>
+    <th>VII<br>3.15-4.10</th>
+  </tr>
+
+  <tr>
+    <td class="day">MONDAY</td>
+    <td>SE</td>
+    <td>TOC</td>
+    <td rowspan="6" class="break">TEA<br>BREAK</td>
+    <td>CN</td>
+    <td>PE-1</td>
+    <td rowspan="6" class="break">LUNCH<br>BREAK</td>
+    <td colspan="2">MINI PROJECT</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="day">TUESDAY</td>
+    <td>PE-1</td>
+    <td>RMIPR</td>
+    <td>TOC</td>
+    <td>PLACEMENT</td>
+    <td colspan="2">WEB LAB</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="day">WEDNESDAY</td>
+    <td>CN</td>
+    <td>TOC</td>
+    <td colspan="2">CN LAB</td>
+    <td colspan="2">YOGA (NCMC)</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="day">THURSDAY</td>
+    <td>RMIPR</td>
+    <td>CN</td>
+    <td>SE</td>
+    <td>EVS(PROJECTS)</td>
+    <td>PE-1</td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="day">FRIDAY</td>
+    <td>TOC</td>
+    <td>SE</td>
+    <td>PLACEMENT</td>
+    <td>EVS(PROJECTS)</td>
+    <td colspan="2">PROCTORING</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="day">SATURDAY</td>
+    <td colspan="2">IIC Activities</td>
+    <td colspan="2">Departmental Activities</td>
+    <td colspan="3"></td>
+  </tr>
+</table>
+
+</body>
+</html>
