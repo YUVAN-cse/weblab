@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Animation</title>
+</head>
+<body>
+  <h1 id="animatedText"></h1>
+
+  <script>
+    let textElement = document.getElementById("animatedText");
+    let fontSize = 5;
+    let isGrowing = true;
+    textElement.innerText = "TEXT-GROWING";
+    textElement.style.color = "red";
+    let timerId = setInterval(changeSize, 100);
+    function changeSize()
+    {
+      if (isGrowing == true)
+      {
+        fontSize = fontSize + 1;
+        if (fontSize >= 50)
+        {
+          isGrowing = false;
+          textElement.innerText = "TEXTSHRINKING";
+          textElement.style.color = "blue";
+        }
+      }
+      else
+      {
+        fontSize = fontSize - 1;
+        if (fontSize <= 5)
+        {
+          clearInterval(timerId);
+        }
+      }
+
+      textElement.style.fontSize = fontSize + "px";
+    }
+  </script>
+</body>
+</html>
