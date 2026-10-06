@@ -13,38 +13,56 @@
 		align-items: center;
 		overflow: hidden;
 	}
-	div{
-		height: 400px;
-		width: 400px;
+	.main{
 		border: 2px solid black;
-		display: flex;
-		flex-direction: column;
-		padding: 80px 100px 100px 100px;
-		background-color: navy;
-	}
-	button{
-		height: 100px;
-		width: 100px;
-		margin: 3%;
-		background-color: #9302b5;
-
-	}
-	a{
-		color: whitesmoke;
-		text-decoration: none;
+		height: 350px;
+		width: 350px;
 	}
 	h1{
-		padding-left: 40%;
+		height: 30%;
+		margin: 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
-
+	.sub{
+		height: 50%;
+		margin: 0px;
+		display: flex;
+		margin-top: 25px;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	a{
+		height: 70%;
+		width: 31%;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.orange{
+		background-color: orange;
+		color: white;
+	}
+	.white{
+		background-color: white;
+		color: navy;
+	}
+	.green{
+		background-color: green;
+		color: white;
+	}
 </style>
 <body>
-	<div>
-		<h1 style="color: white;">LINKS</h1>
-	  	<button> <a href="calculator.html">LAB1</a> </button>
-		<button> <a href="textGrow.html">LAB2</a> </button>
-		<button> <a href="form.html">LAB3</a> </button>
+	<div class="main">
+		<h1>LINKS</h1>
+		<hr>
+		<div class="sub">
+	  		 <a href="calculator.html" class="orange"><div>LAB1</div></a> 
+			 <a href="textGrow.html" class="white"><div>LAB2</div></a> 
+			 <a href="form.html" class="green"><div>LAB3</div></a> 
+		</div>
 	</div>
-  
 </body>
 </html>
