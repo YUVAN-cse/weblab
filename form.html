@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+  <style>
+    body{
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    #registrationBox{
+      border: 2px solid black;
+      padding: 50px;
+      border-radius: 50px;
+    }
+    label
+    {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input
+    {
+      width: 95%;
+      padding: 6px;
+    }
+
+    button
+    {
+      margin-top: 15px;
+      padding: 8px 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="registrationBox">
+
+    <h2 style="text-align: center; color: darkblue;">Registration Form</h2>
+    <form onsubmit="return validateForm()">
+      <label>First Name</label>
+      <input type="text" id="firstName">
+
+      <label>Password</label>
+      <input type="password" id="password">
+
+      <label>E-mail id</label>
+      <input type="text" id="emailId">
+
+      <label>Mobile Number</label>
+      <input type="text" id="mobileNumber">
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script>
+    function validateForm()
+    {
+      let firstName = document.getElementById("firstName").value;
+      let password = document.getElementById("password").value;
+      let emailId = document.getElementById("emailId").value;
+      let mobileNumber = document.getElementById("mobileNumber").value;
+
+      // Patterns used for checking
+      let namePattern = /^[a-zA-Z]{6,}$/;
+      let passwordPattern = /^.{6,}$/;
+      let emailPattern = /^[a-zA-Z0-9._]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+      let mobilePattern = /^[0-9]{10}$/;
+
+      if (namePattern.test(firstName) == false)
+      {
+        alert("First name must contain only alphabets and at least 6 characters");
+        return false;
+      }
+
+      if (passwordPattern.test(password) == false)
+      {
+        alert("Password must be at least 6 characters");
+        return false;
+      }
+
+      if (emailPattern.test(emailId) == false)
+      {
+        alert("Enter a valid e-mail id like name@domain.com");
+        return false;
+      }
+
+      if (mobilePattern.test(mobileNumber) == false)
+      {
+        alert("Mobile number must contain exactly 10 digits");
+        return false;
+      }
+
+      alert("Registration successful");
+      return true;
+    }
+  </script>
+</body>
+</html>
