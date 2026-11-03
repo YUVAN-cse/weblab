@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="program4.css"?>
+<STUDENTDATA>
+    <STUDENT>
+        <USN>1BY22CS001</USN>
+        <NAME>Arjun Kumar</NAME>
+        <COLLEGE>BMSIT</COLLEGE>
+        <PROGRAMME>CSE</PROGRAMME>
+        <YEAR>2022</YEAR>
+        <EMAIL>arjun.kumar@example.com</EMAIL>
+    </STUDENT>
+    <STUDENT>
+        <USN>1BY22CS014</USN>
+        <NAME>Priya Sharma</NAME>
+        <COLLEGE>BMSIT</COLLEGE>
+        <PROGRAMME>CSE</PROGRAMME>
+        <YEAR>2022</YEAR>
+        <EMAIL>priya.sharma@example.com</EMAIL>
+    </STUDENT>
+    <STUDENT>
+        <USN>1BY23CS027</USN>
+        <NAME>Rahul Reddy</NAME>
+        <COLLEGE>BMSIT</COLLEGE>
+        <PROGRAMME>CSE</PROGRAMME>
+        <YEAR>2023</YEAR>
+        <EMAIL>rahul.reddy@example.com</EMAIL>
+    </STUDENT>
+</STUDENTDATA>
