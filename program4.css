@@ -1,0 +1,42 @@
+*
+{
+    display: block;
+    margin-left: 15px;
+}
+
+USN
+{
+    color: red;
+    font-size: 30px;
+    margin-top: 20px;
+}
+ 
+NAME
+{
+    color: blue;
+    font-size: 26px;
+}
+ 
+COLLEGE
+{
+    color: green;
+    font-size: 22px;
+}
+ 
+PROGRAMME
+{
+    color: purple;
+    font-size: 22px;
+}
+ 
+YEAR
+{
+    color: orange;
+    font-size: 20px;
+}
+ 
+EMAIL
+{
+    color: brown;
+    font-size: 18px;
+}
